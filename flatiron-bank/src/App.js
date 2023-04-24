@@ -1,35 +1,67 @@
-import logo from './logo.svg';
-import './App.css';
-import React ,{ useState , useEffect } from 'react';
-  // importing json data
-// import transactions from 'db.json'
+// import logo from './logo.svg';
+// import './App.css';
+import { useState , useEffect } from 'react';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-  // importing json data to be displayed
-// useEffect(() => {
-//   fetch("http://localhost:3000/transactions")
-//     .then((r) => r.json())
-//     .then((transactions) => console.log(transactions));
-//   }, []);
+ const [selectedTransactions, setSelectedTransactions] = useState("All");
+ const [Transactions, setTransactions] = useState([]);
 
+ useEffect(() => 
+ {
+   fetch("http://localhost:3000/transactions")
+     .then((r) => r.json())
+     .then((data) => setTransactions(data));
+ }, [])
+
+return(
+ <div className="App">
+ <h1>Transactions</h1>
+ <table>
+   <thead>
+     <tr>
+     <th>ID</th>
+     <br></br>
+       <th>Date</th>
+       <br></br>
+       <th>Description</th>
+       <br></br>
+       <th>Category</th>
+       <br></br>
+       <th>Amount</th>
+
+     </tr>
+   </thead>
+   <tbody>
+     {Transactions.map((Transaction, index) => (
+       <tr key={index}>
+        <td>{Transaction.id}</td>
+            <br></br>
+        <td>{Transaction.date}</td>
+             <br></br>
+        <td>{Transaction.description}</td>
+            <br></br>
+        <td>{Transaction.category}</td>
+            <br></br>
+        <td>{Transaction.amount}</td>
+       </tr>
+     ))}
+   </tbody>
+ </table>
+</div>
+);
+}
+
+function TransForm(){
+  const [id, setId] = useState("");
+  const [Name, setName] = useState("");
+}
 
 export default App;
+
+
+
+
+
+
+
