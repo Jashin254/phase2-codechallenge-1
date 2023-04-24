@@ -54,7 +54,11 @@ return(
 
 function TransForm(){
   const [id, setId] = useState("");
-  const [Name, setName] = useState("");
+  const [Date, setDate] = useState("");
+  const [Descripion, setDescription] = useState("");
+  const [Category, setCategory] = useState("");
+  const [Amount, setAmount] = useState("");
+
 }
 
 export default App;
