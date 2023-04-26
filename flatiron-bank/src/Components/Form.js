@@ -38,7 +38,7 @@ function MyForm(){
     <div className='transform'>
         <form>
         <h2>INPUT FORM</h2>
-        {/* <input type = "ID" placeholder ="ID"/> */}
+        <input type = "ID" placeholder ="ID"/>
 
 <input type = "DATE" placeholder = "DATE"/>
 

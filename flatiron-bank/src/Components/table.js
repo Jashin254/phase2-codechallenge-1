@@ -8,7 +8,7 @@ function TransTable(){
  {
    fetch("http://localhost:3000/Transactions")
      .then((r) => r.json())
-     .then((Transactions) => setTransactions(Transactions));
+     .then((data) => setTransactions(data));
  }, [])
     return (<div className="Trans">
     <h1>Transactions</h1>
@@ -22,33 +22,25 @@ function TransTable(){
           <th>Date</th>
           
           <th>Description</th>
-          {/* <br></br> */}
+          
           <th>Category</th>
-          {/* <br></br> */}
+          
           <th>Amount</th>
    
         </tr>
    
       </thead>
       <tbody>
-        {Transactions.map((Transactions, index) => (
-          <tr key={index}>
-           <td>{Transactions.id}</td>
-               {/* <br></br>
-               <br></br>
-               <br></br> */}
+        {Transactions.map((Transactions) => (
+          <tr key={Transactions.id}>
+           
+               
            <td>{Transactions.date}</td>
-                {/* <br></br>
-                <br></br>
-                <br></br> */}
+                
            <td>{Transactions.description}</td>
-               {/* <br></br>
-               <br></br>
-               <br></br> */}
+               
            <td>{Transactions.category}</td>
-               {/* <br></br>
-               <br></br>
-               <br></br> */}
+               
            <td>{Transactions.amount}</td>
           </tr>
         ))}
