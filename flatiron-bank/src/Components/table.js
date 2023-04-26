@@ -10,14 +10,23 @@ function TransTable(){
      .then((r) => r.json())
      .then((data) => setTransactions(data));
  }, [])
-    return (<div className="Trans">
+    return (<div className="Trans"
+    style={{
+      textAlign: "center",
+      maxWidth: "10000px",
+      margin: "0 auto",
+      border: "15px solid #000080",
+      padding: "40px 25px",
+      marginTop: "50px",
+      backgroundColor: "#037c6e",
+      fontSize:"35px"
+      }}>
     <h1>Transactions</h1>
     
-    
-    <table>
+     <table>
       <thead>
         <tr>
-        <th>ID</th>
+        
        
           <th>Date</th>
           
@@ -34,7 +43,7 @@ function TransTable(){
         {Transactions.map((Transactions) => (
           <tr key={Transactions.id}>
            
-               
+             
            <td>{Transactions.date}</td>
                 
            <td>{Transactions.description}</td>

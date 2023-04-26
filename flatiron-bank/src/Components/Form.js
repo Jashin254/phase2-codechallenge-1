@@ -35,7 +35,19 @@ function MyForm(){
     .then((data) => console.log(data));
 
   return (
-    <div className='transform'>
+    <div className='transform'
+    style={{
+      textAlign: "center",
+      maxWidth: "1000px",
+      margin: "0 auto",
+      border: "10px solid #253f4b",
+      padding: "40px 25px",
+      marginTop: "50px",
+      backgroundColor: "#c8dfea",
+      fontSize:"25px"
+    }}
+  
+>
         <form>
         <h2>INPUT FORM</h2>
         <input type = "ID" placeholder ="ID"/>
