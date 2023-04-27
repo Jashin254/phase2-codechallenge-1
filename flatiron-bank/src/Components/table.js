@@ -26,7 +26,7 @@ function TransTable(){
      <table>
       <thead>
         <tr>
-        
+        <th>ID</th>
        
           <th>Date</th>
           
