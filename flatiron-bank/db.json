@@ -549,11 +549,90 @@
       "id": 78
     },
     {
+      "date": "2023-03-02",
+      "description": "chicken",
+      "category": "food",
+      "amount": "350",
+      "id": 79
+    },
+    {
       "date": "",
       "description": "",
       "category": "",
       "amount": "",
-      "id": 79
+      "id": 80
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 81
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 82
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 83
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 84
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 85
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 86
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "id": 87
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "": "",
+      "id": 88
+    },
+    {
+      "date": "",
+      "description": "",
+      "category": "",
+      "amount": "",
+      "": "",
+      "id": 89
+    },
+    {
+      "date": "2015-11-13",
+      "description": "John wick ,4 tickets",
+      "category": "Entertainment",
+      "amount": "1150",
+      "id": 90
     }
   ]
 }

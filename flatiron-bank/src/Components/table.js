@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { useState , useEffect } from 'react';
 
@@ -26,7 +27,7 @@ function TransTable(){
      <table>
       <thead>
         <tr>
-        <th>ID</th>
+         {/* <th>ID</th>  */}
        
           <th>Date</th>
           
@@ -42,6 +43,7 @@ function TransTable(){
       <tbody>
         {Transactions.map((Transactions) => (
           <tr key={Transactions.id}>
+
            
              
            <td>{Transactions.date}</td>
