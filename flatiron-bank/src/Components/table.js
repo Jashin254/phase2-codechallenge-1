@@ -9,7 +9,7 @@ function TransTable(){
 
     useEffect(() => 
  {
-   fetch("http://localhost:3000/Transactions")
+   fetch("https://my-json-server.typicode.com/Jashin254/phase2-codechallenge-1/Transactions")
      .then((r) => r.json())
      .then((data) => setTransactions(data));
  }, [])
@@ -18,7 +18,7 @@ function TransTable(){
   const newData = Transactions.filter(transaction => transaction.id !== id);
   setTransactions(newData);
   // Send a DELETE request to the json file to delete the transaction
-  fetch(`http://localhost:3000/transactions/${id}`, {
+  fetch(`https://my-json-server.typicode.com/Jashin254/phase2-codechallenge-1/Transactions/${id}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json"
